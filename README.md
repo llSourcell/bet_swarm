@@ -8,7 +8,6 @@
    cd betswarm
    ```
 
-   [image]https://i.imgur.com/eCIHT2w.png[/image]
 
 2. **Set your API keys:**
    - Copy `.env.example` to `.env` in both `backend/` and (if needed) `frontend/`:
