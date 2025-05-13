@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+redis
+firebase-admin
+httpx
+python-dotenv
+pydantic
+playwright
+langgraph==0.0.38

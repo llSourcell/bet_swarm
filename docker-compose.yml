@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+  backend:
+    build: ./backend
+    env_file:
+      - ./backend/.env.example
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ../frontend/Dockerfile
+    ports:
+      - "3100:3100"
+    depends_on:
+      - backend
